@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to My Website</title>
+  <style>
+
+    :root {
+      --main-color: #3366cc;
+      --font-size: 16px;
+      --container-width: 500px;
+      --container-height: 300px;
+      --table-border-color: #ccc;
+      --table-hover-color: #e6e6e6;
+      --list-item-color: #ff0000;
+      --image-width: 200px;
+      --image-height: 200px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: var(--main-color);
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #f2f2f2;
+      width: var(--container-width);
+      height: var(--container-height);
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid var(--table-border-color);
+      padding: 8px;
+      text-align: left;
+    }
+
+    tbody tr:hover {
+      background-color: var(--table-hover-color);
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    ul li:first-child {
+      font-weight: bold;
+      color: var(--list-item-color);
+
+    }
+
+    img {
+      width: var(--image-width);
+      height: var(--image-height);
+    }
+
+    td:first-child {
+      background-color: #f9f9f9;
+    }
+
+    tr:last-child td {
+      background-color: #f2f2f2;
+    }
+
+    th {
+      background-color: #ccc;
+    }
+
+    a:hover {
+      color: #ff0000;
+    }
+
+    .container::before {
+      content: "";
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+    <img src="/Books.jpg" style="height: 100px; width: 200px;" alt="Books Image">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+          <th>Header 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+          <td>Data 4</td>
+        </tr>
+        <tr>
+          <td>Data 5</td>
+          <td>Data 6</td>
+          <td>Data 7</td>
+          <td>Data 8</td>
+        </tr>
+        <tr>
+          <td>Data 9</td>
+          <td>Data 10</td>
+          <td>Data 11</td>
+          <td>Data 12</td>
+        </tr>
+        <tr>
+          <td>Data 13</td>
+          <td>Data 14</td>
+          <td>Data 15</td>
+          <td>Data 16</td>
+        </tr>
+        <tr>
+          <td>Data 17</td>
+          <td>Data 18</td>
+          <td>Data 19</td>
+          <td>Data 20</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
